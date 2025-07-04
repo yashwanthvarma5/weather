@@ -13,7 +13,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="main-content">
       <h1>Home Page</h1>
       {!user && <Google onLogin={onLogin} />}
     </div>
