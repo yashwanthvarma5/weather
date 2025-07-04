@@ -10,10 +10,12 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/weather" element={<Weather />} />
-      </Routes>
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/weather" element={<Weather />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
