@@ -1,0 +1,64 @@
+/* App.css */
+
+/* Reset some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #005f73;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+/* Link styles */
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #94d2bd;
+}
+
+/* Container for page content */
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  nav {
+    padding: 1rem;
+  }
+  nav a {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  .main-content {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
